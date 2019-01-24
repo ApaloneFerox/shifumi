@@ -8,21 +8,22 @@ $showBotChoice = [
 
 
 //Déclaration de la fonction qui affichera l'utilisateur
-function gamerChoice($showGamerChoice){
+function showIMGgamerChoice($showGamerChoice){
     // $gamerChoice = $_POST["showGamerChoice"];
 
     if ($showGamerChoice === "shi") {
-        echo "<p>image shi </p>";
+        echo '<img src="img/stone.svg" alt="shi">';
     }
            
     elseif ($showGamerChoice === "fu") {
-        echo  "<p>image fu </p>" ;
+        echo  '<img src="img/leaf.svg" alt="fu">';
     }
+    
     elseif ($showGamerChoice === "mi") {
-        echo "<p> image mi </p>"  ;
+        echo '<img src="img/scissors.svg" alt="mi">'  ;
     }
     else{
-      echo "<p> error </p>";
+      echo '<img src="" alt="error">';
     }
 }
 
