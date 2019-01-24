@@ -1,4 +1,12 @@
 <?php
+
+$showBotChoice = [
+    "shi",
+    "fu",
+    "mi",
+];
+
+
 //Déclaration de la fonction qui affichera l'utilisateur
 function gamerChoice($showGamerChoice){
     // $gamerChoice = $_POST["showGamerChoice"];
@@ -20,18 +28,14 @@ function gamerChoice($showGamerChoice){
 
 // gamerChoice("shi")
 
-//Déclaration de la fonction qui affichera les choix random du Bot
-$showBotChoice = [
-    "shi",
-    "fu",
-    "mi",
-];
 
+
+//Déclaration de la fonction qui affichera les choix random du Bot
 function showBotChoice($showBotChoice){
     // $showBotChoice= $_POST["showBotChoice"];
     $random = array_rand($showBotChoice);
     return $showBotChoice[$random];
 }
 
-var_dump(showBotChoice($showBotChoice));
+// var_dump(showBotChoice($showBotChoice));
 ?>

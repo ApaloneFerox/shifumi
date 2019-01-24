@@ -3,7 +3,7 @@
         SHIFUMI RESULTAT
     */
 
-
+require_once("php/library.php");
 
 ?>
 <!DOCTYPE html>
@@ -16,5 +16,8 @@
 </head>
 <body>
     
+    <?php gamerChoice("shi"); 
+    ?>
+
 </body>
 </html>
