@@ -19,9 +19,9 @@
    <h1>Shi-fu-mi</h1>
 
    <div class="result">
-       <img src="" alt="Image joueur">
+       <img src="img/leaf.svg" alt="Image joueur">
        <p>Tu pue le chat </p>
-       <img src="" alt="Image ordinateur">
+       <img src="img/stone.svg" alt="Image ordinateur">
    </div>
 
     <div class="buttonAgain">
