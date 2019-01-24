@@ -1,0 +1,117 @@
+body {
+    display: flex;
+
+    background-color: paleturquoise;
+    flex-flow: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: palevioletred;
+    font-size: 5em;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+input {
+    width: 25%;
+    max-width: 7em;
+    height: 7em;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 2em;
+    color: palevioletred;
+    background-color: white;
+    border: solid palevioletred .5em;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.533333px 0.833333px 0px, rgb(0, 0, 0) -0.416667px 0.916667px 0px, rgb(0, 0, 0) -0.983333px 0.133333px 0px, rgb(0, 0, 0) -0.65px -0.75px 0px, rgb(0, 0, 0) 0.283333px -0.966667px 0px, rgb(0, 0, 0) 0.966667px -0.283333px 0px;
+}
+
+input:hover {
+    animation: trepide 1s linear infinite ;
+    cursor: pointer;
+}   
+
+@keyframes trepide {
+    0% { transform: scale(1.05) translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: scale(1.05) translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: scale(1.05) translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform:  scale(1.05)translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: scale(1.05) translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: scale(1.05) translate(1px, -2px) rotate(-1deg); }
+  }
+}
+
+@media screen and (max-width: 480px) {
+    input {
+        height: 4.5em;
+        font-size: 1.5em;
+    }
+}
+
+.shi {
+    background-image: url(../img/stone.svg);
+    background-size: 5em auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fu {
+    background-image: url(../img/leaf.svg);
+    background-size: 5em auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mi {
+    background-image: url(../img/scissors.svg);
+    background-size: 5em auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.buttonAgain {
+    display: flex;
+    flex-flow: row;
+}
+
+.buttonAgain label {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 2em;
+    color: palevioletred;
+}
+
+.buttonAgain a {
+    text-decoration: none;
+}
+
+.buttonAgain input {
+    height: auto;
+    width: auto;
+    border: solid palevioletred .2em;
+    margin: 0 0 0 1em;
+    cursor: pointer;
+}
+
+.buttonAgain input:hover {
+    transform: scale(1.12);
+    box-shadow: 
+}
+
+.result {
+    display: flex;
+    justify-content: space-around;
+}
+
+.result p{
+    margin: 0 25%;
+}
