@@ -21,6 +21,7 @@ require_once ('php/library.php');
    <h1>Shi-fu-mi</h1>
 
    <div class="result">
+<<<<<<< HEAD
        <img src="" alt="Image joueur">
        <?php
         $gamer = $_POST['gamerChoice'];
@@ -64,6 +65,11 @@ require_once ('php/library.php');
         }
     ?>
        <img src="" alt="Image ordinateur">
+=======
+       <img src="img/leaf.svg" alt="Image joueur">
+       <p>Tu pue le chat </p>
+       <img src="img/stone.svg" alt="Image ordinateur">
+>>>>>>> 20673c55268b7a26f0ee536a00498fffb9053b98
    </div>
 
     <div class="buttonAgain">
