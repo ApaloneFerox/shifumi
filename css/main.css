@@ -142,4 +142,15 @@ input:hover {
         max-width: 50%;
         font-size: 1em;
     }
+    .shi {
+        background-size: 3.5em auto;
+    }
+    
+    .fu {
+        background-size: 3.5em auto;
+    }
+    
+    .mi {
+        background-size: 3.5em auto;
+    }
 }
