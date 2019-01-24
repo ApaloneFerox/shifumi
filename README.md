@@ -15,7 +15,7 @@ Result.php
 
   $_POST["gamerChoice"] recupere le $_POST soit Shi/fu/mi
   
-  fucntion showGamerChoice => Affiche l'image du joueur
+  function showGamerChoice => Affiche l'image du joueur
   
   function showBotChoice => choix aléatoire d'image du Bot
   
