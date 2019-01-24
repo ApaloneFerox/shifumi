@@ -19,7 +19,7 @@ function theWinnerIs($gamer_1, $gamer_2){
             > execo
             > error
     */
-
+    $theWinnerIs="";
     $result = "";
     switch ($gamer_1) {
         case 'shi':
@@ -42,20 +42,24 @@ function theWinnerIs($gamer_1, $gamer_2){
     switch ($result) {
         case 'win':
             # WIN
+            $theWinnerIs = "gamer";
             break;
         case 'loose':
             # LOOSE
+            $theWinnerIs = "bot";
             break;
         case 'execo':
             # EXECO
+            $theWinnerIs = "execo";
             break;
         
         default:
             #  ERROR MESSAGE
+            $theWinnerIs = "error";
             break;
     }
 
-    return $result;
+    return $theWinnerIs;
 }
 function shi($opponentChoice){
     $result = "";
@@ -122,9 +126,11 @@ function me($opponentChoice){
     return $result;
 }
 
-$g1 = "fu";
-$g2 = "shi";
+/*
+$g1 = "shi";
+$g2 = "fu";
 echoPre("gamer_1 : ".$g1);
 echoPre("gamer_2 : ".$g2);
-echoPre("gamer_1 ".theWinnerIs($g1,$g2));
+echoPre("The winner is ".theWinnerIs($g1,$g2));
+*/
 ?>

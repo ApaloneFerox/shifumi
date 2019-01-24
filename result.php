@@ -1,4 +1,5 @@
 <?php
+require_once ('php/library.php');
     /*
         SHIFUMI RESULTAT
     */
@@ -12,6 +13,46 @@
     <title>SHIFUMI : DO YOU WIN ?</title>
 </head>
 <body>
-    
+    <?php
+        $g1 = "";
+        $g2 = "fu";
+
+        $theWinnerIs = theWinnerIs($g1,$g2);
+        /*
+            renvoit :
+                - gamer
+                - bot
+                - execo
+                - error
+        */
+        switch ($theWinnerIs) {
+            case 'gamer':
+                # code...
+                ?>
+                <h2> Vous avez gagner contre cet imbécile de Bot</h2>
+                <?php
+                break;
+            case 'bot':
+                # code...
+                ?>
+                <h2> Vous êtes nul, personne de surpasse un Bot !</h2>
+                <?php
+                break;
+            case 'execo':
+                # code...
+                ?>
+                <h2> Respect ! Aucun vainqueur! Il va faloir recommencer pour vous départager</h2>
+                <?php
+                break;
+            case 'error':
+                # code...
+            default:
+                # code...
+                ?>
+                <h2> Il y a une erreur quelque part . . .</h2>
+                <?php
+                break;
+        }
+    ?>
 </body>
 </html>
