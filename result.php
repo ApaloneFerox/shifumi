@@ -14,10 +14,10 @@ require_once ('php/library.php');
 </head>
 <body>
     <?php
-        $g1 = "";
-        $g2 = "fu";
+        $gamer = "fu";
+        $bot = "fu";
 
-        $theWinnerIs = theWinnerIs($g1,$g2);
+        $theWinnerIs = theWinnerIs($gamer,$bot); // Gamer First !
         /*
             renvoit :
                 - gamer
@@ -41,7 +41,7 @@ require_once ('php/library.php');
             case 'execo':
                 # code...
                 ?>
-                <h2> Respect ! Aucun vainqueur! Il va faloir recommencer pour vous départager</h2>
+                <h2> Respect ! Aucun vainqueur! Il va falloir recommencer pour vous départager</h2>
                 <?php
                 break;
             case 'error':
