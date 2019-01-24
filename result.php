@@ -74,8 +74,8 @@ require_once ('php/library.php');
    </div>
 
     <div class="buttonAgain">
-    <label for="again">Try again ! </label>
-    <a href="index.php"><input type="button" name="again" value="もう一度やり直してください"></a>
+    <label for="again"> もう一度やり直してください</label>
+    <a href="index.php"><input type="button" name="again" value="Try again !"></a>
     </div>
 
 </body>

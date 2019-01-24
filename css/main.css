@@ -124,13 +124,33 @@ input:hover {
     h1 {
         font-size: 3em;
     }
+    form {
+        flex-flow: column;
+        align-items: center;
+        margin: 2em;
+    }
     input {
         height: 4.5em;
+        min-width: 4.5em;
         font-size: 1.5em;
+    }
+    .shi {
+        background-size: 3.5em auto;
+        align-self: flex-start;
+    }
+    
+    .fu {
+        background-size: 3.5em auto;
+    }
+    
+    .mi {
+        background-size: 3.5em auto;
+        align-self: flex-end;
     }
     .buttonAgain {
         display: flex;
         flex-flow: column;
+        align-items: center;
     }
     .buttonAgain input {
         margin: 0;
@@ -142,15 +162,5 @@ input:hover {
         max-width: 50%;
         font-size: 1em;
     }
-    .shi {
-        background-size: 3.5em auto;
-    }
-    
-    .fu {
-        background-size: 3.5em auto;
-    }
-    
-    .mi {
-        background-size: 3.5em auto;
-    }
+
 }
