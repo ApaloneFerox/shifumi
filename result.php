@@ -12,6 +12,7 @@ require_once ('php/library.php');
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SHIFUMI : DO YOU WIN ?</title>
 </head>
+
 <body>
     <?php
         $gamer = "fu";

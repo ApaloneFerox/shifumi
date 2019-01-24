@@ -10,7 +10,7 @@ require_once ('echoPre.php');
      Fonction theWinnerIs
     */
 
-function theWinnerIs($gamer_1, $gamer_2){
+function theWinnerIs($gamer, $bot){
 
     /*
         $result = 
@@ -21,16 +21,16 @@ function theWinnerIs($gamer_1, $gamer_2){
     */
     $theWinnerIs="";
     $result = "";
-    switch ($gamer_1) {
+    switch ($gamer) {
         case 'shi':
-            $result = shi($gamer_2);
+            $result = shi($bot);
             break;
         
         case 'fu':
-            $result = fu($gamer_2);
+            $result = fu($bot);
             break;
         case 'mi':
-            $result = me($gamer_2);
+            $result = me($bot);
             break;
         
         default:
