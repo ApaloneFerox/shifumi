@@ -110,8 +110,10 @@ input:hover {
 .result {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    margin: 0 5em;
 }
 
-.result p{
-    margin: 0 25%;
+.result img {
+    width: 15%;
 }

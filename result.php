@@ -1,11 +1,8 @@
 <?php
+require_once ('php/library.php');
     /*
         SHIFUMI RESULTAT
     */
-
-require_once("php/library.php");
-
-    var_dump($_POST);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +14,7 @@ require_once("php/library.php");
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
     <title>SHI-FU-MI : DO YOU WIN ?</title>
 </head>
+
 <body>
     
    
@@ -24,11 +22,55 @@ require_once("php/library.php");
    <h1>Shi-fu-mi</h1>
 
    <div class="result">
-   <?php showIMGgamerChoice($_POST["gamerChoice"]); 
+   <?php showIMGChoice($_POST["gamerChoice"]); 
     ?>
        
-       <p>Tu pue le chat </p>
-       <img src="" alt="Image ordinateur">
+       <?php
+        $gamer = $_POST['gamerChoice'];
+        $bot = showBotChoice($botChoice_array);
+        
+
+        $theWinnerIs = theWinnerIs($gamer,$bot); // Gamer First !
+        /*
+            renvoit :
+                - gamer
+                - bot
+                - execo
+                - error
+        */
+        switch ($theWinnerIs) {
+            case 'gamer':
+                # code...
+                ?>
+                <h2> Vous avez gagner contre cet imbécile de Bot</h2>
+                <?php
+                break;
+            case 'bot':
+                # code...
+                ?>
+                <h2> Vous êtes nul, personne ne surpasse un Bot !</h2>
+                <?php
+                break;
+            case 'execo':
+                # code...
+                ?>
+                <h2> Respect ! Aucun vainqueur! Il va falloir recommencer pour vous départager</h2>
+                <?php
+                break;
+            case 'error':
+                # code...
+            default:
+                # code...
+                ?>
+                <h2> Il y a une erreur quelque part . . .</h2>
+                <?php
+                break;
+        }
+    ?>
+
+    
+       <!-- <img src="img/stone.svg" alt="Image ordinateur">  -->
+       <?php showIMGChoice($bot); ?>
    </div>
 
     <div class="buttonAgain">
